@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>注册表单</title>
+</head>
+<body>
+
+<form action="/register" method="post" enctype="multipart/form-data">
+    <label for="username">用户名:</label>
+    <input type="text" id="username" name="username" required><br>
+    
+    <label for="password">密码:</label>
+    <input type="password" id="password" name="password" required><br>
+    
+    <label for="email">电子邮件地址:</label>
+    <input type="email" id="email" name="email" required><br>
+    
+    <label for="gender">性别:</label>
+    <select id="gender" name="gender">
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+    </select><br>
+    
+    <label>兴趣爱好:</label><br>
+    <input type="checkbox" id="travel" name="interest" value="travel">
+    <label for="travel">旅行</label><br>
+    <input type="checkbox" id="photography" name="interest" value="photography">
+    <label for="photography">摄影</label><br>
+    <input type="checkbox" id="sports" name="interest" value="sports">
+    <label for="sports">运动</label><br>
+    
+    <label for="bio">个人简介:</label>
+    <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br>
+    
+    <label for="profilePic">个人照片:</label>
+    <input type="file" id="profilePic" name="profilePic"><br>
+    
+    <input type="submit" value="立即注册">
+</form>
+
+</body>
+</html>
